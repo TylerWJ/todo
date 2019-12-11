@@ -1,0 +1,89 @@
+body {
+	font-family: Roboto;
+	background: #B2FEFA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, #0ED2F7, #B2FEFA);
+    background: -o-linear-gradient(left, #0ED2F7, #B2FEFA);
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*uigradients.com*/
+}
+
+h1 {
+	background-color: #2980b9;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal; /*bolded by default*/
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	background-color: white;
+	height: 40px;
+	line-height: 40px; /*vertically centers text - now the text takes up the whole height*/
+	color: #666; 
+}
+
+input {
+	font-size: 18px;
+	background-color: #f7f7f7;
+	width: 100%; /*goes 100% across the container, does not include padding and margin, only the content*/
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box; /*Includes padding and border but still does not include margin*/
+	/*Should have prefixes, webki, moz, etc.*/
+	-webkit-box-sizing: border-box;/*additional safari support*/
+	-moz-box-sizing: border-box;/*additional firefox support*/
+	color: #2980b9;
+	border: 3px solid rgba(0, 0, 0, 0); /*Adds an invisible border to get rid of annoying gap*/
+}
+
+li span {
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear; /*linear mean that it will move at a constant speed*/
+	opacity: 0; /*eliminates the trash can when not hovered*/
+}
+
+.fa-plus {
+	float: right;
+}
+
+li:nth-child(2n){ /*every other*/
+	background-color: #f7f7f7;
+}
+
+li:hover span{ /*select the span when the li is hovered over*/
+	width: 40px;
+	opacity: 1;
+}
+
+input:focus {
+	background-color: white;
+	border: 3px solid #2980b9; 
+	outline: none;
+}
+
+#container {
+	box-shadow: 0 0 3px rgb(0, 0, 0, 0.1);
+	width: 360px;
+	margin: 100px auto; /*top and bottom 0, left and right auto*/
+	background-color: #f7f7f7;
+}
+
+.liClicked {
+	color: gray;
+	text-decoration: line-through; 
+}
+
+
